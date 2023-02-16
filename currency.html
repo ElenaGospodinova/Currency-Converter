@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./currency.js" defer async></script>   
+    <link rel="stylesheet" href="./currency.css"/>
+    <title>World Currency Convector</title>
+</head>
+<body>
+    <header>
+        <nav>
+            
+          <ul class="main-nav">
+            <h1>World Currency Exchange </h1>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Travel Money</a></li>
+              <li><a href="#">Rates</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+<!------------------- Convertor -->
+    <section class="main">
+        <div class="box">
+            <div class="currency">
+                <p class="convert">
+                    Convert :
+                    <input type="number" id="original-currency-amount" placeholder="0" value="1"> </input>
+                </p>
+                <div>
+                    <select id="from_currency">
+
+                        <option value="CAD">CAD</option>
+                        <option value="CZK">CZK</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="BGN">BGN</option>
+                        <option value="USD" selected>USD</option>
+                    </select>
+                    <button id="exchange">To<i class="fas fa-exchange-alt"></i></button>
+                   
+                    <select id="to_currency">
+                        
+                        <option value="CAD">CAD</option>
+                        <option value="CZK">CZK</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="BGN">BGN</option>
+                        <option value="USD" selected>USD</option>
+                    </select>
+            <p class="result-currency">Exchange Rate:
+                <input type="text" id="exchange-rate"></input>
+            </p>
+
+            <button id="exchange_button">Exchange</button>
+            <p id="output-text">
+                <span id="from"></span> Converted to <span id="to"></span>
+            </p>            
+    </section>
+<!-------------------------Footer section    --------------->
+    <footer>
+        <div class="last">
+            <div class="footer-list">
+                  <h3>World Currency Exchange</h1>
+                  <ul>
+                    <li>Home</li>
+                    <li>Travel Money</li>
+                    <li>Rates</li>
+                    <li>Contact Us</li>
+                  </ul>   
+                  
+            </div>
+            <div class="footerL">
+                <ul>
+                    <li>Support</li>
+                    <li>Q&A</li>
+                    <li>News</li>
+                  </ul>  
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
